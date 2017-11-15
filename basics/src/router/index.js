@@ -5,6 +5,10 @@ import HelloWorld from '@/components/HelloWorld'
 import IndexPage from '@/pages/index'
 import DetailPage from '@/pages/detail'
 import DetailCoupage from '@/pages/detail/count'
+import DetailForPage from '@/pages/detail/forecast'
+import DetailPubPage from '@/pages/detail/publish'
+import DetailAnaPage from '@/pages/detail/analysis'
+
 
 Vue.use(Router)
 
@@ -27,6 +31,15 @@ export default new Router({
         {
           path:'count',
           component:DetailCoupage
+        },{
+          path:'forecast',
+          component:DetailForPage
+        },{
+          path:'analysis',
+          component:DetailAnaPage
+        },{
+          path:'publish',
+          component:DetailPubPage
         }
       ]
     }
