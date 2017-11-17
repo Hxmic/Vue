@@ -1,0 +1,86 @@
+.el_current_city {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #dddddd;
+  margin-top: 10px;
+  background-color: #ffffff !important; }
+.el_current_city p {
+  float: left;
+  padding-left: 10px; }
+.el_current_city span {
+  font-size: 12px;
+  color: #666;
+  float: right;
+  padding-right: 10px; }
+
+.el_current_city_name {
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 10px; }
+.el_current_city_name .el_current_name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #08c;
+  float: left;
+  padding-left: 10px; }
+.el_current_city_name .el-icon-arrow-right {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666; }
+
+.el_hot_city_name {
+  height: 36px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  line-height: 36px;
+  font-size: 16px;
+  padding-left: 10px;
+  border-bottom: 1px solid #dddddd; }
+
+.el_hot_city_table {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  align-content: space-between; }
+
+.el_hot_city_wrap {
+  width: 24.8%;
+  height: 2.8em;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  text-align: center;
+  line-height: 2.8;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+.el_hot_city_wrap a {
+  color: #08c !important;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.el_hot_city_wrap:nth-child(4n) {
+  border-right: none; }
+
+.el_hot_city_wrap .link {
+  color: #333 !important; }
+.el_hot_city_wrap .el_city_list a {
+  color: #333;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/*# sourceMappingURL=one.css.map */
