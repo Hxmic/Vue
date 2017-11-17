@@ -1,0 +1,48 @@
+.el_city_search a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold; }
+.el_city_search .el_logo {
+  text-align: left;
+  line-height: 44px; }
+.el_city_search .el_info {
+  width: 180px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+.el_city_search .el_login {
+  text-align: right;
+  font-weight: normal; }
+
+.el_search_input_content {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-top: 10px;
+  background-color: #ffffff !important;
+  padding: 10px 0; }
+.el_search_input_content input, .el_search_input_content .el_btn_wrap {
+  width: 96%;
+  margin: 0 auto; }
+.el_search_input_content .el_btn_wrap button {
+  margin-top: 10px;
+  width: 100%; }
+
+.el_search_result .el_search_history {
+  border-bottom: 1px solid #dddddd;
+  padding: 6px 0 6px 10px;
+  color: #333333; }
+.el_search_result .el_search_result_content {
+  background-color: #fff;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px; }
+.el_search_result .el_search_result_content .el_search_result_title {
+  margin: 0;
+  color: #333;
+  font-weight: normal;
+  font-size: 16px; }
+.el_search_result .el_search_result_content .el_search_result_address {
+  color: #666666;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=one.css.map */
