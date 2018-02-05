@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合计总价</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+
+<div id="main" v-cloak>
+
+    <h1>通过点击价格进行价格累加</h1>
+    <ul>
+        <li v-for="item in items" @click="toggleActive(item)" :class="{'active':item.active}">
+            {{item.name}} <span>{{item.price | currency}}</span>
+        </li>
+
+        <p>Total: <span>{{total() | currency}}</span></p>
+
+    </ul>
+
+</div>
+
+<script>
+
+    var demo = new Vue({
+        el:'#main',
+        data:{
+            items:[
+                {
+                    name:'Web Development',
+                    price:300,
+                    active:false
+                },{
+                    name: 'Design',
+                    price: 400,
+                    active:false
+                },{
+                    name: 'Integration',
+                    price: 250,
+                    active:false
+                },{
+                    name: 'Training',
+                    price: 220,
+                    active:false
+                }
+            ]
+        },
+        methods:{
+            toggleActive:function (i) {
+                i.active = !i.active;//点击之后变为true，total进行增加
+            },
+            total:function () {
+                var total = 0;
+                this.items.forEach(function (s) {
+                    if(s.active){
+                        total+=s.price;
+                    }
+                });
+                return total;
+            }
+        }
+    })
+
+</script>
+
+
+
+</body>
+</html>

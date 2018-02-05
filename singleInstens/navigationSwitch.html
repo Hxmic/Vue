@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航切换</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <nav @click.prevent>
+        <a v-for="item in items" :class="{'show':item.active}" @click="makeActive(item,item.index)">
+            {{item.name}}
+        </a>
+    </nav>
+
+    <p>你选择了 <b>{{active}}</b></p>
+
+</div>
+
+<script>
+
+    var demo = new Vue({
+        el:'#app',
+        data:{
+            active:'HTML',
+            items:[
+                {name:'HTML',active:true},
+                {name:'CSS',active:false},
+                {name:'JavaScript',active:false},
+                {name:'Vue.js',active:false}
+            ]
+        },
+        methods:{
+            makeActive:function (item,index) {
+                this.active = item.name;
+                for(let i = 0;i<this.items.length;i++){
+                    this.items[i].active = false;
+                }
+
+            }
+        }
+    })
+
+</script>
+
+
+</body>
+</html>

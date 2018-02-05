@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双向数据绑定</title>
+
+    <script src="js/vue.min.js"></script>
+
+</head>
+<body>
+
+<div id="main" @click="hideTooltip">
+    <div class="tooltip" v-if="show_tooltip" @click.stop>
+        <input type="text" v-model="text_content" >
+    </div>
+
+    <p @click.stop="toggleTooltip">{{text_content}}</p>
+
+</div>
+
+
+<script>
+
+    var demo = new Vue({
+        el:'#main',
+        data:{
+            text_content:'Edit me',
+            show_tooltip:false
+        },
+        methods:{
+            hideTooltip:function () {
+                this.show_tooltip = true;
+            },
+            toggleTooltip:function () {
+                this.show_tooltip = !this.show_tooltip;
+            }
+        }
+
+    })
+
+</script>
+
+</body>
+</html>
